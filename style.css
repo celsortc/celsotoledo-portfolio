@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
