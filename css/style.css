@@ -8,6 +8,6 @@
   align-items: center;
   justify-self: center;
 }
-body {
-  overflow: hidden;
+body > *:not(.dev-overlay) {
+  display: none !important;
 }
