@@ -6,7 +6,10 @@ li,
 p,
 dd,
 dt,
-dl {
+dl,
+img,
+html,
+div {
   margin: 0px;
   padding: 0px;
 }

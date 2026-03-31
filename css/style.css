@@ -1,2 +1,11 @@
+.dev-overlay {
+  inset: 0;
+  width: 100vh;
+  height: 100vh;
+}
+body {
+  overflow: hidden;
+}
+
 @import "geral.css";
 @import "header.css";
