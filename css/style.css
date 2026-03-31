@@ -1,3 +1,6 @@
+@import "geral.css";
+@import "header.css";
+
 .dev-overlay {
   width: 100vh;
   height: 100vh;
@@ -8,6 +11,3 @@
 body {
   overflow: hidden;
 }
-
-@import "geral.css";
-@import "header.css";
