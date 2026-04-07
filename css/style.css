@@ -1,13 +1,4 @@
-@import "geral.css";
-@import "header.css";
-
-.dev-overlay {
-  width: 100vh;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-}
-body > *:not(.dev-overlay) {
-  display: none !important;
-}
+@import "./geral.css";
+@import "./header.css";
+@import "./hero.css";
+@import "comingsoon.css";

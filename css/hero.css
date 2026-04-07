@@ -1,0 +1,9 @@
+.intro-content {
+  margin-top: 100px;
+  min-height: 1500px;
+}
+.intro-content img {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
