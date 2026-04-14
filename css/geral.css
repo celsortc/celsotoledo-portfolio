@@ -13,3 +13,12 @@ div {
   margin: 0px;
   padding: 0px;
 }
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
