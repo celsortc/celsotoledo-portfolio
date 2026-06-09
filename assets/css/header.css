@@ -16,6 +16,9 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  border: 1px solid #e8e8e8;
+  /* box-shadow: 3px 3px 5px rgb(232, 232, 232); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -45,6 +48,6 @@ a:hover {
 }
 
 .scrolled {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
 }

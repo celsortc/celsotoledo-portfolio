@@ -1,14 +1,13 @@
 .hero-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* align-items: center; */
+  grid-template-columns: 2fr 1fr;
   margin: 200px auto 0;
-  width: 1280px;
+  width: 950px;
   gap: 200px;
 }
 
 .hero-container img {
-  max-width: 400px;
+  max-width: 375px;
   border-radius: 5%;
 }
 
@@ -18,6 +17,7 @@
   color: #22c55e;
   font-weight: 600;
 }
+
 .hero-name {
   font-size: 3.5rem;
   font-weight: 700;
@@ -30,7 +30,7 @@
 }
 .hero-description {
   margin-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #717182;
   max-width: 500px;
 }
