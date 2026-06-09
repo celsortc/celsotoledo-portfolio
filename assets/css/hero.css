@@ -65,3 +65,8 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.btn-hero-social img {
+  width: 60%;
+  height: 60%;
+}
