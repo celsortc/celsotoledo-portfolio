@@ -51,8 +51,7 @@
   display: flex;
 }
 
-.hero-buttons .btn-linkedin,
-.hero-buttons .btn-github {
+.btn-hero-social {
   display: flex;
   align-items: center;
   justify-content: center;
