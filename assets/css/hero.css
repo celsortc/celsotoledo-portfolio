@@ -11,7 +11,7 @@
   border-radius: 5%;
 }
 
-.hero-intro {
+.hero-intro-text {
   margin-top: 40px;
   font-size: 1.25rem;
   color: #22c55e;
@@ -20,18 +20,19 @@
 
 .hero-name {
   font-size: 3.5rem;
+  color: var(--color-text);
   font-weight: 700;
 }
 
 .hero-role {
   font-size: 2rem;
   font-weight: 500;
-  color: #717182;
+  color: var(--color-text-muted);
 }
 .hero-description {
   margin-top: 20px;
   font-size: 1rem;
-  color: #717182;
+  color: var(--color-text-muted);
   max-width: 500px;
 }
 .hero-buttons {
@@ -45,7 +46,7 @@
   color: white;
   text-decoration: none;
   border: none;
-  border-radius: 999px;
+  border-radius: 9999px;
   font-weight: 600;
   cursor: pointer;
   display: flex;

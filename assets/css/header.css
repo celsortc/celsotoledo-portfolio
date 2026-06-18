@@ -2,13 +2,23 @@ body {
   min-height: 200vh;
 }
 
+#logo {
+  font-size: 1.5rem;
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
-  background-color: #fff;
+  background-color: var(--header-bg-top);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border-radius: 50px;
   width: 600px;
   height: 75px;
   margin: 20px auto;
@@ -16,9 +26,12 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid #e8e8e8;
-  /* box-shadow: 3px 3px 5px rgb(232, 232, 232); */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 9999px;
+  backdrop-filter: blur(12px);
 }
 
 a {
@@ -39,6 +52,9 @@ header a {
 .utilities {
   padding-right: 20px;
 }
+.utilities a {
+  font-size:;
+}
 #logo {
   padding-left: 40px;
 }
@@ -48,6 +64,5 @@ a:hover {
 }
 
 .scrolled {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  background: var(--header-bg-scrolled);
 }
