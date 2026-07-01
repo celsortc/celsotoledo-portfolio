@@ -1,9 +1,10 @@
 .hero-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 200px auto 0;
+  margin: 200px auto 300px;
+  padding: 20px 0px;
   width: 950px;
-  gap: 200px;
+  gap: 100px;
 }
 
 .hero-container img {
@@ -14,7 +15,7 @@
 .hero-intro-text {
   margin-top: 40px;
   font-size: 1.25rem;
-  color: #22c55e;
+  color: var(--color-primary);
   font-weight: 600;
 }
 
@@ -42,7 +43,7 @@
   display: flex;
   margin-top: 30px;
   padding: 12px 24px;
-  background-color: #22c55e;
+  background-color: var(--color-primary);
   color: white;
   text-decoration: none;
   border: none;
@@ -60,7 +61,7 @@
   margin-top: 30px;
   width: 40px;
   height: 40px;
-  border: 1px solid #22c55e;
+  border: 1px solid var(--color-primary);
   border-radius: 50%;
   font-weight: 600;
   cursor: pointer;
