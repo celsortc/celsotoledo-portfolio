@@ -1,7 +1,7 @@
 .hero-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 200px auto 300px;
+  margin: 200px auto 350px;
   padding: 20px 0px;
   width: 950px;
   gap: 100px;
