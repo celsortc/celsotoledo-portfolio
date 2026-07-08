@@ -1,10 +1,17 @@
 .hero-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 200px auto 350px;
-  padding: 20px 0px;
+  grid-template-columns: 2fr 375px;
   width: 950px;
-  gap: 100px;
+  height: calc(100vh - 250px);
+  margin: 250px auto 0px;
+  /* padding-top: 250px; */
+  gap: 75px;
+  align-items: center;
+  align-content: start;
+}
+
+.hero-content {
+  padding: 20px;
 }
 
 .hero-intro-text {
