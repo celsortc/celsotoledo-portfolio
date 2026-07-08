@@ -77,16 +77,18 @@ dt,
 dl,
 img,
 html,
-div {
+div,
+a {
   margin: 0px;
   padding: 0px;
 }
-body {
-  font-family:
+* {
+  /* font-family:
     "Inter",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
     Roboto,
-    sans-serif;
+    sans-serif; */
+  font-family: "Inter", sans-serif !important;
 }
