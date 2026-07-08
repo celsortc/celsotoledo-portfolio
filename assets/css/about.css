@@ -1,24 +1,30 @@
+.about {
+  padding: 96px 48px;
+}
+
 .about-container {
+  max-width: 1280px;
   margin: 0 auto;
-  height: 500px;
-  min-height: 2000px;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  width: 1150px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
   align-items: center;
-  margin: 0 auto;
+}
+
+.title-block {
+  text-align: center;
+  margin-bottom: 64px;
 }
 
 h2 {
   position: relative;
-  text-align: center;
-  margin-bottom: 80px;
   font-size: 3rem;
   font-weight: var(--font-bold);
   color: var(--color-text);
+  margin-bottom: 16px;
 }
 
 h2::after {
@@ -26,26 +32,31 @@ h2::after {
   width: 80px;
   height: 4px;
   background-color: var(--color-primary);
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 999px;
+  display: block;
+  margin: 16px auto 0;
+
+  border-radius: 9999px;
 }
 
 .about-text {
   max-width: 50ch;
   margin-left: 50px;
-  /* padding: 20px; */
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  line-height: 1.625;
 
-  font-weight: var(--font-normal);
+  /* font-weight: var(--font-normal); */
   color: var(--color-text-muted);
 }
 
 h3 {
   padding: 0px;
   margin: 0px;
+}
+
+.about-topic {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .about-item {
