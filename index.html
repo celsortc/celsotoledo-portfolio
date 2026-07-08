@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="assets/icons/htmlTag-about.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
   <title>Celso Toledo</title>
@@ -18,7 +18,7 @@
 <body>
 
   <div class="canvas">
-    <canvas id="hero-canvas"></canvas>
+    <!-- <canvas id="hero-canvas"></canvas> -->
     <header>
       <a href="https://celsotoledo.dev/" id="logo">CT</a>
       <nav class="navigation">
@@ -46,24 +46,42 @@
           <a href="#" class="btn-github btn-hero-social"><img src="./assets/icons/github-svg-lightmode.svg" alt=""></a>
         </div>
       </div>
-      <img class="hero-element hero-photo" src="./assets/images/profile-image.jpeg" alt="Celso Toledo Photo">
+      <div class="img-container">
+        <div class="hero-photo">
+          <img class="hero-element" src="./assets/images/profile-image.jpeg" alt="Celso Toledo Photo">
+        </div>
+      </div>
     </section>
   </div>
 
 
   <section class="about-container">
-    <h2>Sobre Mim</h2>
+    <h2>About Me</h2>
     <div class="about-content">
-      <p class="about-text">Desenvolvedor Front-end com 2 anos de experiência na criação de interfaces modernas, responsivas e focadas na melhor experiência do usuário. Fluente em inglês, possuo excelente comunicação e facilidade em trabalhar em equipe. Atualmente curso Análise e Desenvolvimento de Sistemas, buscando evoluir continuamente e ser 1% melhor todos os dias.
+      <p class="about-text">I'm a passionate Fullstack Developer with extensive experience in building modern web applications. I love turning complex problems into simple, beautiful, and intuitive solutions. With expertise in both front-end and back-end technologies, I create seamless digital experiences that users love.
       </p>
       <ul class="about-topics">
-        <li>
-          <img class="about-icons" src="assets/icons/htmlTag-about.svg" alt="">
-          <div class="icon-description">
-            <h3>Código Limpo</h3>
-            <p>Lorem ipsum dolor sit.</p>
+        <li class="about-item">
+          <div class="icon-wrapper"><img class="about-icons" src="assets/icons/htmlTag-about.svg" alt=""></div>
+          <div class="about-icon-desc">
+            <h3 class="icon-title">Código Limpo</h3>
+            <p class="icon-description">Writing maintainable and scalable code</p>
           </div>
-
+        </li>
+        <li class="about-item">
+          <div class="icon-wrapper"><img class="about-icons" src="assets/icons/htmlTag-about.svg" alt=""></div>
+          <div class="about-icon-desc">
+            <h3 class="icon-title">Modern Design
+            </h3>
+            <p class="icon-description">Creating beautiful user interfaces</p>
+          </div>
+        </li>
+        <li class="about-item">
+          <div class="icon-wrapper"><img class="about-icons" src="assets/icons/htmlTag-about.svg" alt=""></div>
+          <div class="about-icon-desc">
+            <h3 class="icon-title">Performance</h3>
+            <p class="icon-description">Optimized for speed and efficiency</p>
+          </div>
         </li>
       </ul>
     </div>

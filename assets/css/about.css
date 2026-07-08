@@ -1,12 +1,14 @@
 .about-container {
   margin: 0 auto;
+  height: 500px;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  grid-template-columns: 2fr 1fr;
+  width: 1150px;
   align-items: center;
+  margin: 0 auto;
 }
 
 h2 {
@@ -14,6 +16,8 @@ h2 {
   text-align: center;
   margin-bottom: 80px;
   font-size: 3rem;
+  font-weight: var(--font-bold);
+  color: var(--color-text);
 }
 
 h2::after {
@@ -28,7 +32,58 @@ h2::after {
   border-radius: 999px;
 }
 
+.about-text {
+  max-width: 50ch;
+  margin-left: 50px;
+  /* padding: 20px; */
+  font-size: 1.25rem;
+
+  font-weight: var(--font-normal);
+  color: var(--color-text-muted);
+}
+
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.about-item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-muted);
+  border-radius: 12px;
+  justify-self: center;
+}
+
 .about-icons {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+}
+
+.about-icon-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.icon-title {
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+}
+
+.icon-description {
+  font-size: 0.875rem;
+  font-weight: var(--font-normal);
+  color: var(--color-text-muted);
 }

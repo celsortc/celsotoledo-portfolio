@@ -11,9 +11,8 @@ header {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   width: 600px;
   height: 75px;
-  margin: 20px auto;
   position: fixed;
-  top: 0;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -76,6 +75,7 @@ header a {
 
 .scrolled {
   background: var(--header-bg-scrolled);
+  top: 16px;
 }
 
 .text-btn {

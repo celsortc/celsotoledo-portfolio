@@ -11,6 +11,10 @@
   --color-text: #1a1a1a;
   --color-text-muted: #717182;
   --color-text-white: #ffffff;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
 
   /* ===== FUNDOS ===== */
   --color-background: #ffffff;
