@@ -4,15 +4,12 @@
   align-items: center;
   justify-content: center;
   padding: 0 48px;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1280px;
-  width: 100%;
-  height: calc(100vh - 250px);
-  margin: 250px auto 0px;
-  gap: 64px;
-  align-items: center;
-  padding: 0px 48px; */
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 0 48px;
+  }
 }
 
 .hero-container {
@@ -22,20 +19,34 @@
 
 .hero-grid {
   display: grid;
-  gap: 64px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 48px;
   align-items: center;
+  justify-content: center;
 }
 
-.hero-content > * {
-  /* border: 1px solid; */
-  /* padding: 20px; */
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .hero-content {
   gap: 8px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    justify-content: start;
+    align-items: start;
+  }
 }
 
 .hero-iam {
@@ -45,23 +56,41 @@
 }
 
 .hero-name {
-  font-size: 4.5rem;
+  font-size: 48px;
   color: var(--color-text);
   font-weight: var(--font-bold);
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-name {
+    font-size: 72px;
+  }
 }
 
 .hero-role {
-  font-size: 1.9rem;
-  font-weight: var(--fon-medium);
+  font-size: 24px;
+  font-weight: var(--font-medium);
   color: var(--color-text-muted);
 }
+
+@media (min-width: 768px) {
+  .hero-role {
+    font-size: 30px;
+  }
+}
+
 .hero-description {
-  margin-top: 20px;
-  font-size: 1.15rem;
+  font-size: 18px;
   color: var(--color-text-muted);
   max-width: 512px;
-  line-height: 24px;
-  font-weight: var(--font-medium);
+  line-height: 1.625;
 }
 .hero-buttons {
   display: flex;
@@ -98,19 +127,28 @@
   margin-right: 8px;
 }
 
+.btn-contact:hover {
+  background-color: var(--color-primary-hover);
+}
+
 .btn-hero-social {
   padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border: 1px solid var(--color-text-muted);
+  border: 1px solid var(--color-border);
   border-radius: 9999px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.btn-hero-social img {
+.btn-hero-social:hover {
+  border-color: var(--color-primary-border-hover);
+  background-color: var(--color-primary-light);
+}
+
+.btn-hero-social svg {
   width: 24px;
   height: 24px;
 }
