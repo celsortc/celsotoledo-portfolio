@@ -1,0 +1,128 @@
+.projects {
+  padding: 96px 24px;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 96px 48px;
+  }
+}
+
+.projects-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Definido primeiro o valor para mobile (mobile first) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 200ms;
+}
+
+.project-card:hover {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.05),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.project-image {
+  height: 192px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 500ms;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: var(--font-semibold);
+}
+
+.project-description {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tags span {
+  padding: 4px 12px;
+  background-color: var(--color-muted);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.btn-live-demo {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  font-size: 0.875rem;
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-github-card {
+  padding: 8px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms;
+}
+
+.btn-github-card:hover {
+  background: var(--color-muted);
+}
