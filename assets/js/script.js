@@ -90,3 +90,13 @@ document.querySelectorAll(".skill-card").forEach((card, index) => {
     );
   });
 });
+
+document.querySelectorAll(".project-card").forEach((card, index) => {
+  inView(card, (element) => {
+    animate(
+      element,
+      { opacity: 1, y: 0 },
+      { duration: 0.4, delay: index * 0.1 },
+    );
+  });
+});
