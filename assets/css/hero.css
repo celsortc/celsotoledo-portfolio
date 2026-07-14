@@ -37,6 +37,8 @@
   flex-direction: column;
   gap: 24px;
   order: 2;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 @media (min-width: 768px) {
@@ -170,6 +172,8 @@
   display: flex;
   justify-content: center;
   order: 1;
+  opacity: 0;
+  transform: translateX(50px);
 }
 
 .hero-image-frame {
