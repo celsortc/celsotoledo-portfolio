@@ -49,6 +49,8 @@
   justify-content: center;
   gap: 12px;
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .skill-card:hover {

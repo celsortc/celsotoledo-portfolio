@@ -65,13 +65,28 @@ document.querySelectorAll(".about-item").forEach((card, index) => {
 });
 
 // 3. Texto
-inView(".about-text", (element) => {
-  animate(element, { opacity: 1, x: 0 }, { duration: 0.6 });
-});
+inView(
+  ".about-text",
+  (element) => {
+    animate(element, { opacity: 1, x: 0 }, { duration: 0.6 });
+  },
+  { amount: 0.1 },
+);
 
 // hover
 
 hover(".about-item", (element) => {
   animate(element, { x: 10 }, { duration: 0.2 });
   return () => animate(element, { x: 0 }, { duration: 0.2 });
+});
+
+// skill card
+document.querySelectorAll(".skill-card").forEach((card, index) => {
+  inView(card, (element) => {
+    animate(
+      element,
+      { opacity: 1, y: 0 },
+      { duration: 0.4, delay: index * 0.1 },
+    );
+  });
 });
