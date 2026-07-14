@@ -68,3 +68,10 @@ document.querySelectorAll(".about-item").forEach((card, index) => {
 inView(".about-text", (element) => {
   animate(element, { opacity: 1, x: 0 }, { duration: 0.6 });
 });
+
+// hover
+
+hover(".about-item", (element) => {
+  animate(element, { x: 10 }, { duration: 0.2 });
+  return () => animate(element, { x: 0 }, { duration: 0.2 });
+});
