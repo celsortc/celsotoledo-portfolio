@@ -48,3 +48,23 @@ async function playHeroThenNav() {
 }
 
 playHeroThenNav();
+
+inView(".title-block h2", (element) => {
+  animate(element, { opacity: 1, y: 0 }, { duration: 0.6 });
+});
+
+// 2. Feature cards (staggered entre eles)
+document.querySelectorAll(".about-item").forEach((card, index) => {
+  inView(card, (element) => {
+    animate(
+      element,
+      { opacity: 1, x: 0 },
+      { duration: 0.4, delay: index * 0.1 },
+    );
+  });
+});
+
+// 3. Texto
+inView(".about-text", (element) => {
+  animate(element, { opacity: 1, x: 0 }, { duration: 0.6 });
+});
