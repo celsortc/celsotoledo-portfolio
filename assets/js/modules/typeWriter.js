@@ -9,8 +9,6 @@ export default function initTypingEffect() {
   let letterIndex = 0;
   let isDeleting = false;
 
-  console.log("entro");
-
   const typingElement = document.getElementById("typing");
 
   function typeEffect() {

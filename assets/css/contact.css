@@ -38,6 +38,7 @@
   font-size: 14px;
   font-weight: var(--font-medium);
   margin-bottom: 8px;
+  caret-color: transparent;
 }
 
 .contact-form input,
@@ -149,6 +150,7 @@
   background-color: var(--color-background);
   border: 1px solid var(--color-border);
   border-radius: 16px;
+  caret-color: transparent;
 }
 
 .contact-availability h3 {

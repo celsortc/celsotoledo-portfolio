@@ -1,7 +1,9 @@
 .skills {
   padding: 96px 24px;
   background-color: var(--color-muted-30);
+  caret-color: transparent;
 }
+
 @media (min-width: 768px) {
   .skills {
     padding: 96px 48px;

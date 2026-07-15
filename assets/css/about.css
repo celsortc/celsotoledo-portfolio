@@ -1,5 +1,6 @@
 .about {
   padding: 96px 24px;
+  caret-color: transparent;
 }
 
 @media (min-width: 768px) {

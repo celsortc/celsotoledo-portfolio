@@ -96,6 +96,10 @@ a {
   box-sizing: border-box;
 }
 
+.title-block {
+  caret-color: transparent;
+}
+
 .title-block::after {
   content: "";
   width: 80px;
