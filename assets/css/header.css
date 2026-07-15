@@ -84,6 +84,7 @@
   font-weight: var(--font-medium);
   cursor: pointer;
   transition: background 100ms;
+  text-align: center;
 }
 
 /* Controls */
