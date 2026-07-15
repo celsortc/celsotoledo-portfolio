@@ -1,5 +1,7 @@
 import { animate } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
 
 export default function initNav() {
-  animate(".nav-pill", { opacity: 1, y: 0 }, { duration: 0 });
+  const nav = document.querySelector(".nav-pill");
+
+  Motion.animate(nav, { y: 0 }, { duration: 0.5, easing: "ease-out" });
 }
