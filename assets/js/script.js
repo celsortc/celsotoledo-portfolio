@@ -14,6 +14,7 @@ import initSkills from "./modules/skills.js";
 import initProject from "./modules/project.js";
 import initContact from "./modules/contact.js";
 import initFooter from "./modules/footer.js";
+import initTypingEffect from "./modules/typeWriter.js";
 // import initHeroCanvas from "./modules/hero-canvas.js";
 
 initNavbarScroll();
@@ -24,4 +25,6 @@ initSkills();
 initProject();
 initContact();
 initFooter();
+initTypingEffect();
+
 // initHeroCanvas();
