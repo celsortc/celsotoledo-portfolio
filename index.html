@@ -59,15 +59,16 @@
             </p>
 
             <div class="hero-cta-row">
-              <button class="btn-contact-me btn-hero-animate">
+
+              <a class="btn-contact-me btn-hero-animate" href="#contact">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                 </svg>
-
                 Contact Me
-              </button>
+              </a>
 
-              <a class="btn-social-icon btn-hero-animate" href="#">
+
+              <a class="btn-social-icon btn-hero-animate" href="https://www.linkedin.com/in/celsotoledo1/" target="_blank">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                   <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -84,7 +85,7 @@
                 </svg>
               </a>
 
-              <a class="btn-social-icon btn-hero-animate" href="#">
+              <a class="btn-social-icon btn-hero-animate" href="https://github.com/celsortc" target="_blank">
                 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                   <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -385,7 +386,8 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" action="">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="cffd5924-b6c7-4e68-8fcd-805c3e96a587">
           <div>
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="John Doe" required>
