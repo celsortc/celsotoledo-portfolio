@@ -18,10 +18,18 @@ export default function initSkills() {
 
   document.querySelectorAll(".skill-card").forEach((card) => {
     card.addEventListener("mouseenter", () => {
-      Motion.animate(card, { y: -8, scale: 1.05 }, { duration: 0.2 });
+      Motion.animate(
+        card,
+        { y: -8, scale: 1.05 },
+        { duration: 0.2, easing: "ease-out" },
+      );
     });
     card.addEventListener("mouseleave", () => {
-      Motion.animate(card, { y: 0, scale: 1 }, { duration: 0.2 });
+      Motion.animate(
+        card,
+        { y: 0, scale: 1 },
+        { duration: 0.2, easing: "ease-out" },
+      );
     });
   });
 }

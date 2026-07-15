@@ -26,7 +26,7 @@ export default function initContact() {
   //hover method cards
   document.querySelectorAll(".contact-method-card").forEach((card) => {
     card.addEventListener("mouseenter", () => {
-      Motion.animate(card, { x: 10 }, { duration: 0.2 });
+      Motion.animate(card, { x: 10 }, { duration: 0.2, easing: "ease-out" });
     });
     card.addEventListener("mouseleave", () => {
       Motion.animate(card, { x: 0 }, { duration: 0.2, easing: "ease-out" });
