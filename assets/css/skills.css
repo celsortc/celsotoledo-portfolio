@@ -63,6 +63,10 @@
   height: 36px;
   width: 36px;
 }
+.skill-card svg {
+  height: 36px;
+  width: 36px;
+}
 
 .skill-name {
   font-size: 0.875rem;
