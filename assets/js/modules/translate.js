@@ -55,15 +55,6 @@ export default function initTranslate() {
 
     const newLang = verifySavedLanguage(currentLang);
 
-    // if (
-    //   localStorage.getItem("lang") === "pt" ||
-    //   localStorage.getItem("lang") === "en"
-    // ) {
-    //   newLang = localStorage.getItem("lang") === "en" ? "pt" : "en";
-    // } else {
-    //   newLang = ;
-    // }
-
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
 
