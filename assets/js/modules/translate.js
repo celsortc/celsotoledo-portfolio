@@ -1,19 +1,33 @@
-export default function initTranslate() {
-  const translations = {
-    en: {
-      "nav-about": "About",
-      "nav-skills": "Skills",
-      "nav-projects": "Projects",
-      "nav-contact": "Contact",
-    },
-    pt: {
-      "nav-about": "Sobre",
-      "nav-skills": "Habilidades",
-      "nav-projects": "Projetos",
-      "nav-contact": "Contato",
-    },
-  };
+import { updateTypewriterWords } from "./typeWriter.js";
 
+export const translations = {
+  en: {
+    "nav-about": "About",
+    "nav-skills": "Skills",
+    "nav-projects": "Projects",
+    "nav-contact": "Contact",
+    "hero-greeting": "Hello, I'm",
+    typewriter: [
+      "Front-end Developer",
+      "Back-end Developer",
+      "Full-stack Developer",
+    ],
+  },
+  pt: {
+    "nav-about": "Sobre",
+    "nav-skills": "Habilidades",
+    "nav-projects": "Projetos",
+    "nav-contact": "Contato",
+    "hero-greeting": "Olá, eu sou",
+    typewriter: [
+      "Desenvolvedor Front-end",
+      "Desenvolvedor Back-end",
+      "Desenvolvedor Full-stack",
+    ],
+  },
+};
+
+export default function initTranslate() {
   function setInitialLanguage() {
     //define lingua padrão como pt, caso não tenha nada no localStorage, se tiver, pega a lingua salva no localStorage
     const nativeLang = "pt";
@@ -27,6 +41,8 @@ export default function initTranslate() {
       document.querySelector(".btn-language").textContent = "PT";
       document.querySelector(".btn-language").dataset.lang = "en";
     }
+
+    updateTypewriterWords(translations[firstLang].typewriter);
 
     //define a primeira lingua do site com base no ternário lá em cima
     document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -52,8 +68,8 @@ export default function initTranslate() {
 
   translateBtn.addEventListener("click", () => {
     const currentLang = translateBtn.dataset.lang; //pt
-
     const newLang = verifySavedLanguage(currentLang);
+    updateTypewriterWords(translations[newLang].typewriter);
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");

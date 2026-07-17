@@ -15,7 +15,7 @@ import initProject from "./modules/project.js";
 import initContact from "./modules/contact.js";
 import initFooter from "./modules/footer.js";
 import initTypingEffect from "./modules/typeWriter.js";
-import initTranslate from "./modules/translate.js";
+import initTranslate, { translations } from "./modules/translate.js";
 // import initHeroCanvas from "./modules/hero-canvas.js";
 
 initNavbarScroll();
@@ -26,7 +26,7 @@ initSkills();
 initProject();
 initContact();
 initFooter();
-initTypingEffect();
+initTypingEffect(translations.pt.typewriter);
 initTranslate();
 
 // initHeroCanvas();
