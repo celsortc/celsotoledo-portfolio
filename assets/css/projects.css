@@ -72,6 +72,7 @@
 .project-title {
   font-size: 1.25rem;
   font-weight: var(--font-semibold);
+  color: var(--color-text);
 }
 
 .project-description {
@@ -145,6 +146,7 @@
 .btn-github-card svg {
   width: 20px;
   height: 20px;
+  color: var(--color-text);
 }
 
 .btn-view-more {
@@ -159,6 +161,7 @@
   display: block;
   margin: 0 auto;
   text-align: center;
+  color: var(--color-text);
 }
 
 .btn-view-more:hover {

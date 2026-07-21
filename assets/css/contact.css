@@ -1,6 +1,7 @@
 .contact {
   padding: 96px 24px;
-  background-color: var(--color-muted-30);
+  background-color: var(--color-skills);
+  caret-color: var(--color-text);
 }
 
 @media (min-width: 768px) {
@@ -33,12 +34,18 @@
   gap: 24px;
 }
 
+.contact-form input,
+.contact-form textarea {
+  color: var(--color-text);
+}
+
 .contact-form label {
   display: block;
   font-size: 14px;
   font-weight: var(--font-medium);
   margin-bottom: 8px;
   caret-color: transparent;
+  color: var(--color-text);
 }
 
 .contact-form input,
@@ -157,6 +164,7 @@
   font-size: 1rem;
   font-weight: var(--font-semibold);
   margin-bottom: 8px;
+  color: var(--color-text);
 }
 
 .contact-availability p {

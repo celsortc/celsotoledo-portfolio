@@ -44,12 +44,18 @@
   /* ===== HERO ===== */
   --hero-glow-start: rgba(34, 197, 94, 0.15);
   --hero-glow-end: rgba(34, 197, 94, 0.25);
+
+  /* --social-icon-hover: rgba(34, 197, 94, 0.1); */
+  --social-icon-hover: rgb(39, 227, 0, 0.1);
+  --social-icon-neon: #27e300;
 }
 
 [data-theme="dark"] {
   /* ===== CORES PRINCIPAIS (levemente mais claras p/ contraste no escuro) ===== */
-  --color-primary: #4ade80;
-  --color-primary-hover: #22c55e;
+  /* --color-primary: #4ade80;
+  --color-primary-hover: #22c55e; */
+  --color-primary: #22c55e;
+  --color-primary-hover: #16a34a;
   --color-primary-light: rgba(74, 222, 128, 0.12);
   --color-primary-border: rgba(74, 222, 128, 0.25);
   --color-primary-border-hover: rgba(74, 222, 128, 0.45);
