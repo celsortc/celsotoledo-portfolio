@@ -45,9 +45,23 @@
             </svg>
           </button>
           <button class="btn-language" data-lang="pt">EN</button>
-        </div>
 
+          <button class="btn-hamburger" id="hamburgerbtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navOverlay">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </nav>
+
+      <div class="nav-overlay" id="navOverlay">
+        <div class="nav-overlay-links">
+          <a href="nav-overlay-link" data-i18n="nav-about" href="#about">About</a>
+          <a href="nav-overlay-link" data-i18n="nav-skills" href="#skills">Skills</a>
+          <a href="nav-overlay-link" data-i18n="nav-projects" href="#projects">Projects</a>
+          <a href="nav-overlay-link" data-i18n="nav-contact" href="#contact">Contact</a>
+        </div>
+      </div>
     </header>
 
     <section class="hero" id="home">

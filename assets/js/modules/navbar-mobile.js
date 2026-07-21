@@ -1,1 +1,1 @@
-export function initNavbarMobile() {}
+export default function initNavbarMobile() {}
