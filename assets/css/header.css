@@ -95,7 +95,7 @@
   gap: 8px;
   margin-left: 16px;
   padding-left: 16px;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid var(--color-border);
 }
 
 .btn-theme {
@@ -115,6 +115,7 @@
 .btn-theme svg {
   width: 20px;
   height: 20px;
+  color: var(--color-text);
 }
 
 .nav-link:hover,
@@ -131,7 +132,9 @@
   font-size: 0.875rem;
   font-weight: var(--font-semibold);
   cursor: pointer;
+  color: var(--color-text-white);
   transition: background 200ms;
+  color: var(--color-text);
 }
 
 /* header {

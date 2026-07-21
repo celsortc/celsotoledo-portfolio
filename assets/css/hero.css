@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 96px 24px 0;
   caret-color: transparent;
+  background-color: var(--color-background);
 }
 
 @media (min-width: 768px) {
@@ -65,6 +66,7 @@
   font-weight: var(--font-bold);
   line-height: 1.1;
   margin: 0;
+  color: var(--color-text);
 }
 
 @media (min-width: 768px) {
@@ -125,6 +127,7 @@
 .btn-contact-me svg {
   width: 20px;
   height: 20px;
+  color: var(--color-text-white);
 }
 
 .btn-social-icon {
@@ -150,6 +153,7 @@
 .btn-social-icon svg {
   width: 24px;
   height: 24px;
+  color: var(--color-text);
 }
 
 .img-container {

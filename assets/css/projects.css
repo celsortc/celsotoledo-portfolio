@@ -1,6 +1,7 @@
 .projects {
   padding: 96px 24px;
   caret-color: transparent;
+  background-color: var(--color-background);
 }
 
 @media (min-width: 768px) {

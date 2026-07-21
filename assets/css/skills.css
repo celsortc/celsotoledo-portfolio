@@ -1,6 +1,6 @@
 .skills {
   padding: 96px 24px;
-  background-color: var(--color-muted-30);
+  background-color: var(--color-skills);
   caret-color: transparent;
 }
 
@@ -72,4 +72,5 @@
   font-size: 0.875rem;
   font-weight: var(--font-semibold);
   text-align: center;
+  color: var(--color-text);
 }

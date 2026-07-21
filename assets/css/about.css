@@ -1,6 +1,7 @@
 .about {
   padding: 96px 24px;
   caret-color: transparent;
+  background-color: var(--color-background);
 }
 
 @media (min-width: 768px) {
@@ -51,7 +52,7 @@
 .about-text {
   max-width: 50ch;
   margin-left: 50px;
-  font-size: 1.15rem;
+  font-size: 18px;
   line-height: 1.625;
   color: var(--color-text-muted);
   transform: translateX(-50px);
@@ -73,7 +74,7 @@ h3 {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 16px;
+  padding: 28px;
   border-radius: 16px;
   transform: translateX(50px);
 }
