@@ -15,7 +15,10 @@ import initProject from "./modules/project.js";
 import initContact from "./modules/contact.js";
 import initFooter from "./modules/footer.js";
 import initTypingEffect from "./modules/typeWriter.js";
+
+// Importei o dicionário
 import initTranslate, { translations } from "./modules/translate.js";
+import initThemeBtn from "./modules/themeButton.js";
 // import initHeroCanvas from "./modules/hero-canvas.js";
 
 initNavbarScroll();
@@ -28,5 +31,6 @@ initContact();
 initFooter();
 initTypingEffect(translations.pt.typewriter);
 initTranslate();
+initThemeBtn();
 
 // initHeroCanvas();
