@@ -1,5 +1,5 @@
 .nav-desktop {
-  display: none;
+  opacity: 0;
   position: fixed;
   top: 24px;
   left: 50%;
@@ -11,7 +11,7 @@
 
 @media (min-width: 768px) {
   .nav-desktop {
-    display: block;
+    opacity: 1;
   }
 }
 
