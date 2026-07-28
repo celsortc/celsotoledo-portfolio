@@ -152,9 +152,9 @@ header a {
 
 .btn-hamburger {
   position: relative;
-  width: 24px;
-  height: 24px;
-  padding: 8px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -165,29 +165,28 @@ header a {
 
 .btn-hamburger span {
   position: absolute;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  /* width: 100%; */
+  width: 20px;
   height: 2px;
   background-color: var(--color-text);
   border-radius: 2px;
+  transform: translateX(-50%);
   transition:
     transform 300ms ease,
     opacity 300ms ease;
 }
 
 .btn-hamburger span:nth-child(1) {
-  top: 50%;
-  transform: translateY(-8px);
+  top: calc(50% - 8px);
 }
 
 .btn-hamburger span:nth-child(2) {
   top: 50%;
-  transform: translateY(0);
 }
 
 .btn-hamburger span:nth-child(3) {
-  top: 50%;
-  transform: translateY(8px);
+  top: calc(50% + 8px);
 }
 
 @media (min-width: 768px) {
