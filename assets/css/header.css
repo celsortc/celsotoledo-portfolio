@@ -189,8 +189,53 @@ header a {
   top: calc(50% + 8px);
 }
 
+.btn-hamburger.is-open span:nth-child(1) {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.btn-hamburger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.btn-hamburger.is-open span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%) rotate(-45deg);
+}
+
 @media (min-width: 768px) {
   .btn-hamburger {
     display: none;
   }
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-overlay-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-overlay-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  list-style: none;
+  color: var(--color-text);
+}
+
+.nav-overlay-links a:hover {
+  transition: color 200ms;
+  color: var(--color-primary);
+}
+
+.nav-overlay-links li {
+  list-style: none;
 }
