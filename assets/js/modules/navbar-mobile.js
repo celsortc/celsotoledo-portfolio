@@ -5,10 +5,18 @@ export default function initNavbarMobile() {
   function toggleMenu() {
     const isOpen = menuHamburger.classList.toggle("is-open");
 
-    console.log(isOpen);
-
     navOverlay.classList.toggle("is-open", isOpen);
+
+    menuHamburger.setAttribute("aria-expanded", isOpen);
+
+    document.body.style.overflow = isOpen ? "hidden" : "";
   }
+
+  const navOverlayLinks = document.querySelectorAll(".nav-overlay-links a");
+
+  navOverlayLinks.forEach((link) => {
+    link.addEventListener("click", toggleMenu);
+  });
 
   menuHamburger.addEventListener("click", toggleMenu);
 }
