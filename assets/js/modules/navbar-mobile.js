@@ -18,5 +18,9 @@ export default function initNavbarMobile() {
     link.addEventListener("click", toggleMenu);
   });
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") toggleMenu();
+  });
+
   menuHamburger.addEventListener("click", toggleMenu);
 }
