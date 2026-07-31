@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+  button:hover {
+    background: transparent !important;
+  }
+}
 .nav-desktop {
   /* display: block; */
   position: fixed;
@@ -7,6 +12,11 @@
   z-index: 50;
   transition: top 300ms;
   caret-color: transparent;
+
+  width: calc(
+    100% - 48px
+  ); /* tela inteira menos 24px de respiro em cada lado */
+  max-width: 480px;
 }
 
 .nav-desktop.scrolled {
@@ -30,6 +40,9 @@
   box-shadow:
     0 4px 6px -1px rgb(0 0 0 / 0.1),
     0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  width: 100%;
+  justify-content: space-between;
 }
 
 .nav-desktop.scrolled .nav-pill {
@@ -37,6 +50,17 @@
   box-shadow:
     0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@media (min-width: 768px) {
+  .nav-desktop {
+    width: auto;
+    max-width: none;
+  }
+  .nav-pill {
+    width: auto;
+    justify-content: center; /* ou o que já tinha antes, sem space-between */
+  }
 }
 
 /* LOGO */
