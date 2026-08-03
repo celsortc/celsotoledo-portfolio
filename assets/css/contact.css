@@ -70,6 +70,19 @@
   height: 120px;
 }
 
+.form-status {
+  font-size: 0.875rem;
+  min-height: 20px;
+}
+
+.form-status.success {
+  color: var(--color-primary);
+}
+
+.form-status.error {
+  color: var(--forms-error);
+}
+
 .btn-send {
   width: 100%;
   padding: 16px 32px;

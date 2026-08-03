@@ -48,4 +48,57 @@ export default function initContact() {
   btnSend.addEventListener("mouseup", () => {
     Motion.animate(btnSend, { scale: 1 }, { duration: 0.1 });
   });
+
+  handleFormSubmit();
+}
+
+function handleFormSubmit() {
+  const form = document.querySelector(".contact-form");
+  const status = document.querySelector(".form-status");
+  const btnSend = document.querySelector(".btn-send");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    //Pega os dados dos campos
+    const formData = new FormData(form);
+    //cria um objeto com os dados
+    const object = Object.fromEntries(formData);
+    //cria um json com base nesses dados
+    const json = JSON.stringify(object);
+
+    btnSend.disabled = true;
+    status.textContent = "Enviando...";
+    status.className = "form-status";
+
+    console.log(json);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        status.textContent = "Mensagem enviada com sucesso!";
+        status.classList.add("success");
+        form.reset();
+      } else {
+        status.textContent = "Algo deu errado. Tente novamente.";
+        status.classList.add("error");
+      }
+      console.log(response, result);
+    } catch (error) {
+      status.textContent = "Erro de conexão. Tente novamente.";
+      status.classList.add("error");
+    } finally {
+      btnSend.disabled = false;
+    }
+  });
 }
