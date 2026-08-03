@@ -17,7 +17,8 @@
 .hero-container {
   max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-grid {
@@ -25,6 +26,7 @@
   grid-template-columns: 1fr;
   gap: 48px;
   align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {

@@ -66,7 +66,7 @@
 /* LOGO */
 
 .nav-logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: var(--font-bold);
   background: linear-gradient(to right, #22c55e, #16a34a);
   -webkit-background-clip: text;
@@ -77,6 +77,12 @@
   cursor: pointer;
   transition: opacity 200ms;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-logo {
+    font-size: 24px;
+  }
 }
 
 .nav-logo:hover {
@@ -120,11 +126,21 @@
   gap: 8px;
   margin-left: 16px;
   padding-left: 16px;
-  border-left: 1px solid var(--color-border);
+}
+
+.nav-control {
+  box-sizing: content-box;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .nav-controls {
+    border-left: 1px solid var(--color-border);
+  }
 }
 
 .btn-theme {
-  padding: 8px;
+  padding: 12px;
   border-radius: 9999px;
   border: none;
   background: transparent;
@@ -138,9 +154,19 @@
 }
 
 .btn-theme svg {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .btn-theme {
+    padding: 8px;
+  }
+  .btn-theme svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .nav-link:hover,
@@ -150,16 +176,24 @@
 }
 
 .btn-language {
-  padding: 8px 12px;
+  padding: 12px;
   border-radius: 9999px;
   border: none;
   background: transparent;
-  font-size: 0.875rem;
+  font-size: 18px;
   font-weight: var(--font-semibold);
   cursor: pointer;
   color: var(--color-text-white);
   transition: background 200ms;
   color: var(--color-text);
+  box-sizing: content-box;
+}
+
+@media (min-width: 768px) {
+  .btn-language {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 }
 
 header a {
@@ -185,6 +219,7 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px;
 }
 
 .btn-hamburger span {
@@ -230,6 +265,7 @@ header a {
 @media (min-width: 768px) {
   .btn-hamburger {
     display: none;
+    padding: 8px;
   }
 }
 
