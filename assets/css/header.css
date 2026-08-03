@@ -139,6 +139,29 @@
   }
 }
 
+.icon {
+  position: absolute;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.sun-icon {
+  opacity: 0;
+}
+
+.moon-icon {
+  opacity: 0;
+}
+
+[data-theme="light"] .sun-icon {
+  opacity: 1;
+}
+
+[data-theme="dark"] .moon-icon {
+  opacity: 1;
+}
+
 .btn-theme {
   padding: 12px;
   border-radius: 9999px;
@@ -191,8 +214,8 @@
 
 @media (min-width: 768px) {
   .btn-language {
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 15px;
+    padding: 8px;
   }
 }
 
