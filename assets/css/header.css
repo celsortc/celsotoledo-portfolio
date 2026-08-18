@@ -249,7 +249,7 @@ header a {
 .btn-hamburger span {
   height: 2px;
   width: 24px;
-  background-color: black;
+  background-color: var(--color-text);
   border-radius: 4px;
   position: absolute;
   left: 50%;
