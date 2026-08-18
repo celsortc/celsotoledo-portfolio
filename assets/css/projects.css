@@ -162,6 +162,11 @@
   margin: 0 auto;
   text-align: center;
   color: var(--color-text);
+  opacity: 0;
+}
+
+.btn-view-more.show {
+  opacity: 1;
 }
 
 .btn-view-more:hover {

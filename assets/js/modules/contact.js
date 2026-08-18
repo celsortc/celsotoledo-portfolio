@@ -50,6 +50,7 @@ export default function initContact() {
   });
 
   handleFormSubmit();
+  hideViewMore();
 }
 
 function handleFormSubmit() {
@@ -101,4 +102,13 @@ function handleFormSubmit() {
       btnSend.disabled = false;
     }
   });
+}
+
+function hideViewMore() {
+  const projects = document.querySelectorAll(".project-card");
+  const viewMoreButton = document.querySelector(".btn-view-more");
+
+  if (projects.length > 6) {
+    viewMoreButton.classList.add("show");
+  }
 }
