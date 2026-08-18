@@ -128,7 +128,7 @@
 
 .nav-control {
   box-sizing: content-box;
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 @media (min-width: 768px) {
@@ -190,11 +190,11 @@
   }
 }
 
-.nav-link:hover,
+/* .nav-link:hover,
 .btn-theme:hover,
 .btn-language:hover {
   background-color: var(--color-muted);
-}
+} */
 
 .btn-language {
   padding: 12px;
@@ -208,12 +208,14 @@
   transition: background 200ms;
   color: var(--color-text);
   box-sizing: content-box;
+  width: 36px;
+  height: 36px;
 }
 
 @media (min-width: 768px) {
   .btn-language {
-    font-size: 15px;
-    padding: 8px;
+    font-size: 16px;
+    padding: 4px;
   }
 }
 
@@ -229,58 +231,50 @@ header a {
 
 /* menu hamburger */
 
+.btn-hb-container {
+  display: flex;
+  padding: 8px;
+  /* background-color: red; */
+}
 .btn-hamburger {
+  height: 36px;
+  width: 36px;
+  margin: 0;
   position: relative;
-  width: 40px;
-  height: 40px;
-  padding: 0px;
   border: none;
   background: transparent;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
+  padding: 0;
 }
 
 .btn-hamburger span {
+  height: 2px;
+  width: 24px;
+  background-color: black;
+  border-radius: 4px;
   position: absolute;
   left: 50%;
-  /* width: 100%; */
-  width: 20px;
-  height: 2px;
-  background-color: var(--color-text);
-  border-radius: 2px;
-  transform: translateX(-50%);
-  transition:
-    transform 300ms ease,
-    opacity 300ms ease;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
 }
 
 .btn-hamburger span:nth-child(1) {
-  top: calc(50% - 8px);
+  top: 25%;
 }
-
-.btn-hamburger span:nth-child(2) {
-  top: 50%;
-}
-
 .btn-hamburger span:nth-child(3) {
-  top: calc(50% + 8px);
+  top: 75%;
 }
 
 .btn-hamburger.is-open span:nth-child(1) {
   top: 50%;
-  transform: translateX(-50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 .btn-hamburger.is-open span:nth-child(2) {
   opacity: 0;
 }
-
 .btn-hamburger.is-open span:nth-child(3) {
   top: 50%;
-  transform: translate(-50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 @media (min-width: 768px) {
@@ -324,6 +318,7 @@ header a {
   color: var(--color-text);
 }
 
+/* Quando alguém clicar no link ele fica verde, mobile */
 .nav-overlay-links a:hover {
   transition: color 200ms;
   color: var(--color-primary);
@@ -331,4 +326,29 @@ header a {
 
 .nav-overlay-links li {
   list-style: none;
+}
+
+/* Efeito Linha no hover */
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  height: 2px;
+  background-color: var(--color-text);
+  /* transition:
+    width 0.3s ease,
+    left 0.3s ease; */
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(0.5);
 }
