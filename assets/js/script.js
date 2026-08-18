@@ -16,12 +16,14 @@ import initContact from "./modules/contact.js";
 import initFooter from "./modules/footer.js";
 import initTypingEffect from "./modules/typeWriter.js";
 import initNavbarMobile from "./modules/navbar-mobile.js";
+import initScrollSuave from "./modules/scroll-suave.js";
 
 // Importei o dicionário
 import initTranslate, { translations } from "./modules/translate.js";
 import initThemeBtn from "./modules/themeButton.js";
 // import initHeroCanvas from "./modules/hero-canvas.js";
 
+initScrollSuave();
 initNavbarScroll();
 initHero();
 initAnimations();
