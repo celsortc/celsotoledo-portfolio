@@ -3,7 +3,7 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  padding: 96px 24px 0;
+  padding: 128px 24px 0;
   caret-color: transparent;
   background-color: var(--color-background);
 }
@@ -162,7 +162,6 @@
   display: flex;
   justify-content: center;
   order: 1;
-  transform: translateX(50px);
 }
 
 .hero-image-frame {

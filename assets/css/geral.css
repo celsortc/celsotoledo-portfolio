@@ -98,6 +98,12 @@
   --hero-glow-end: rgba(74, 222, 128, 0.3);
 }
 
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body,
 h1,
 h2,
