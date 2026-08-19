@@ -12,10 +12,6 @@
 </p>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
-
-<p align="center">
   <!-- INSIRA AQUI A SCREENSHOT DO PROJETO -->
 </p>
 
@@ -77,10 +73,4 @@ O desenvolvimento deste projeto proporcionou uma experiência prática em divers
   &nbsp;&nbsp; | &nbsp;&nbsp;
   <strong>📂 Código:</strong>
   <a href="https://github.com/celsortc/celsotoledo-portfolio" target="_blank">GitHub</a>
-</p>
-
-## 📄 Licença
-
-<p>
-Este projeto está sob a licença MIT. Consulte o arquivo <strong>LICENSE</strong> para mais informações.
 </p>
