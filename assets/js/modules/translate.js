@@ -12,7 +12,7 @@ export const translations = {
     "hero-contact-me": "Contact Me",
     "about-title": "About Me",
     "about-description":
-      "I'm a Fullstack Developer focused on building modern web applications with clean code, intuitive user experiences, and scalable solutions. I'm constantly learning and improving my skills to create better digital products.",
+      "I’m a Full Stack Developer, driven by the challenge of turning problems into practical solutions through code. I’m always looking for new challenges and opportunities to learn and grow. Proficient in JavaScript",
     "about-clean-code": "Clean Code",
     "about-clean-code-description":
       "Maintainable, scalable, and easy-to-read code",
@@ -66,7 +66,7 @@ export const translations = {
     "hero-contact-me": "Entrar em Contato",
     "about-title": "Sobre Mim",
     "about-description":
-      "Sou um Desenvolvedor Full Stack focado em criar aplicações modernas com código limpo, experiências de usuário intuitivas e soluções escaláveis. Estou em constante aprendizado e aprimorando minhas habilidades para desenvolver produtos digitais cada vez melhores.",
+      "Sou Desenvolvedor Full Stack, movido pelo desafio de transformar problemas em soluções práticas através do código. Estou sempre em busca de novos desafios e oportunidades para aprender e evoluir. Tenho experiência com JavaScript",
     "about-clean-code": "Código Limpo",
     "about-clean-code-description":
       "Código organizado, escalável e de fácil manutenção",
@@ -116,7 +116,7 @@ export const translations = {
 export default function initTranslate() {
   function setInitialLanguage() {
     //define lingua padrão como pt, caso não tenha nada no localStorage, se tiver, pega a lingua salva no localStorage
-    const nativeLang = "pt";
+    const nativeLang = "en";
     const firstLang =
       localStorage.getItem("lang") != null
         ? localStorage.getItem("lang")
