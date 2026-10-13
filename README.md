@@ -69,7 +69,7 @@ O desenvolvimento deste projeto proporcionou uma experiência prática em divers
 
 <p align="center">
   <strong>🌐 Deploy:</strong>
-  <a href="https://celsotoledo.dev" target="_blank">celsotoledo.dev</a>
+  <a href="https://celsortc.github.io/celsotoledo-portfolio/" target="_blank">Deploy</a>
   &nbsp;&nbsp; | &nbsp;&nbsp;
   <strong>📂 Código:</strong>
   <a href="https://github.com/celsortc/celsotoledo-portfolio" target="_blank">GitHub</a>
